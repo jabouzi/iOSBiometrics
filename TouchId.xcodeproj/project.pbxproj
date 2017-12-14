@@ -8,20 +8,24 @@
 
 /* Begin PBXBuildFile section */
 		A989523A1FE2DEED00FF8057 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = A98952391FE2DEED00FF8057 /* AppDelegate.swift */; };
-		A989523C1FE2DEED00FF8057 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = A989523B1FE2DEED00FF8057 /* ViewController.swift */; };
+		A989523C1FE2DEED00FF8057 /* AuthenticationViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = A989523B1FE2DEED00FF8057 /* AuthenticationViewController.swift */; };
 		A989523F1FE2DEED00FF8057 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = A989523D1FE2DEED00FF8057 /* Main.storyboard */; };
 		A98952411FE2DEED00FF8057 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = A98952401FE2DEED00FF8057 /* Assets.xcassets */; };
 		A98952441FE2DEED00FF8057 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = A98952421FE2DEED00FF8057 /* LaunchScreen.storyboard */; };
+		A989524D1FE2DF4800FF8057 /* LocalAuthentication.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = A989524C1FE2DF3F00FF8057 /* LocalAuthentication.framework */; };
+		A989524F1FE2E0C000FF8057 /* ProtectedContentViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = A989524E1FE2E0C000FF8057 /* ProtectedContentViewController.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
 		A98952361FE2DEED00FF8057 /* TouchId.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = TouchId.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		A98952391FE2DEED00FF8057 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
-		A989523B1FE2DEED00FF8057 /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
+		A989523B1FE2DEED00FF8057 /* AuthenticationViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AuthenticationViewController.swift; sourceTree = "<group>"; };
 		A989523E1FE2DEED00FF8057 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
 		A98952401FE2DEED00FF8057 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		A98952431FE2DEED00FF8057 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		A98952451FE2DEED00FF8057 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		A989524C1FE2DF3F00FF8057 /* LocalAuthentication.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = LocalAuthentication.framework; path = System/Library/Frameworks/LocalAuthentication.framework; sourceTree = SDKROOT; };
+		A989524E1FE2E0C000FF8057 /* ProtectedContentViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ProtectedContentViewController.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -29,6 +33,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				A989524D1FE2DF4800FF8057 /* LocalAuthentication.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -40,6 +45,7 @@
 			children = (
 				A98952381FE2DEED00FF8057 /* TouchId */,
 				A98952371FE2DEED00FF8057 /* Products */,
+				A989524B1FE2DF3F00FF8057 /* Frameworks */,
 			);
 			sourceTree = "<group>";
 		};
@@ -55,13 +61,22 @@
 			isa = PBXGroup;
 			children = (
 				A98952391FE2DEED00FF8057 /* AppDelegate.swift */,
-				A989523B1FE2DEED00FF8057 /* ViewController.swift */,
+				A989523B1FE2DEED00FF8057 /* AuthenticationViewController.swift */,
+				A989524E1FE2E0C000FF8057 /* ProtectedContentViewController.swift */,
 				A989523D1FE2DEED00FF8057 /* Main.storyboard */,
 				A98952401FE2DEED00FF8057 /* Assets.xcassets */,
 				A98952421FE2DEED00FF8057 /* LaunchScreen.storyboard */,
 				A98952451FE2DEED00FF8057 /* Info.plist */,
 			);
 			path = TouchId;
+			sourceTree = "<group>";
+		};
+		A989524B1FE2DF3F00FF8057 /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				A989524C1FE2DF3F00FF8057 /* LocalAuthentication.framework */,
+			);
+			name = Frameworks;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -136,7 +151,8 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				A989523C1FE2DEED00FF8057 /* ViewController.swift in Sources */,
+				A989524F1FE2E0C000FF8057 /* ProtectedContentViewController.swift in Sources */,
+				A989523C1FE2DEED00FF8057 /* AuthenticationViewController.swift in Sources */,
 				A989523A1FE2DEED00FF8057 /* AppDelegate.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
